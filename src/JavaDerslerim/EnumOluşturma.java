@@ -13,7 +13,7 @@ public enum EnumOluşturma {//Evet enum oluşturduk Enum adında...
     private final String tanıtım;//final bu değişkenin değişmeyeceği anlamına geliyor..Burası enum objesindeki ilk parametre için
     private final int yıl;//final bu değişkenin değişmeyeceği anlamına geliyor..Burası enum objesindeki ikinci parametre için
     
-    EnumOluşturma(String t,int y){
+    EnumOluşturma(String t,int y){//Burada enum yapıcısı oluşturduk..
     tanıtım=t;
     yıl=y;
     
