@@ -11,7 +11,7 @@ public class JFrameKullanımıMain {
         JFrameKullanımıClass frame=new JFrameKullanımıClass();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Kapat tuşuna basıldığında JFramemimizin kapatılacağını söyledik..
         frame.setVisible(true);//Framimizi görmek için olmazsa olmaz bunu yazmazsanız frame'i göremezsiniz..
-        frame.setSize(400, 400);
+        frame.setSize(400, 400);//Burda da frame'imizin boyutlarını verdik..
     }
     
 }
