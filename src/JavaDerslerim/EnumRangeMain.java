@@ -12,7 +12,7 @@ public class EnumRangeMain {
         //önce tüm enum elemanlarımızı yazdıralım...
              System.out.printf("%s\t%s\t%d\n", kişi,kişi.getTanıtım(),kişi.getYıl());
         }
-             System.out.println("\nŞimdi belli elemanlar arasında enum elemanlarımızı yazdıralım\n");
+             System.out.println("\nŞimdi belli elemanlar arasında enum elemanlarımızı range ile yazdıralım\n");
         
              for(EnumRangeOluşturma kişi : EnumSet.range(EnumRangeOluşturma.Aslıhan, EnumRangeOluşturma.Ceren))
                  //Bu özel for döngüsü ile Aslıhan ve Ceren arasındaki elemanları alacaktır range bu işe yarar..
