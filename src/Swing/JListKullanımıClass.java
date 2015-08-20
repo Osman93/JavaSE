@@ -22,18 +22,20 @@ public class JListKullanımıClass extends JFrame{
     
     private JPanel panel;
     private ScrollPane p;
-    
+     
     public JListKullanımıClass(){//Constructor'umuzu oluşturuyoruz..
         super("JList Kullanımı");//Frame 'imizin başlığını verdik...
         setLayout(new FlowLayout());//Layoutumuzu belirledik..
         panel=new JPanel();
         p=new ScrollPane();
         list=new JList(listElemanları);
-         list.setVisibleRowCount(20);//JList'te 5 elemanın görüneceğini söyledik..
-        list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        p.add(list);
-        panel.add(p);
         
+         list.setVisibleRowCount(3);//JList'te 5 elemanın görüneceğini söyledik..
+         p.add(list);
+      
+       
+        list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);//Tek seçimin olacağını belirttik..
+       
         list.addListSelectionListener(new ListSelectionListener() {
 
             @Override
@@ -77,8 +79,7 @@ public class JListKullanımıClass extends JFrame{
             
             }
         });
-    add(panel);
-    
-    
+      panel.add(p);
+         add(panel);
     }
 }
