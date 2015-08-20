@@ -18,7 +18,7 @@ import java.awt.*;
 public class JListKullanımıClass extends JFrame{
     private JList list;
     private static String[] listElemanları={"Siyah","Beyaz","Mavi","Kırmızı","Yeşil"};
-    private static Color[] renkler={Color.BLACK,Color.WHITE,Color.BLUE,Color.RED,Color.GREEN};
+    private static Color[] renkler={Color.BLACK,Color.WHITE,Color.BLUE,Color.RED,Color.GREEN};//Burayı kullanmama imkan vermedi hata oluştuğu için switch ile yazdım..
     
     private JPanel panel;
     private ScrollPane p;
@@ -29,7 +29,7 @@ public class JListKullanımıClass extends JFrame{
         panel=new JPanel();
         p=new ScrollPane();
         list=new JList(listElemanları);
-        list.setVisibleRowCount(5);
+         list.setVisibleRowCount(20);//JList'te 5 elemanın görüneceğini söyledik..
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         p.add(list);
         panel.add(p);
@@ -49,6 +49,7 @@ public class JListKullanımıClass extends JFrame{
                    
                    
                case 2:
+                  
                    
                    getContentPane().setBackground(java.awt.Color.BLUE);
                    break;
