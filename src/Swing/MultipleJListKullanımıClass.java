@@ -34,7 +34,7 @@ public class MultipleJListKullanımıClass extends JFrame {
     solList=new JList(dersler);
     solList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);//Çoklu seçim listesi için MULTIPLE_INTERVAL_SELECTION u seçtik
     
-    solList.setVisibleRowCount(3);// 3 tanesini 
+    solList.setVisibleRowCount(3);// 3 satırı ScrollPane ile göstermeyi sağlar...
     
     l.add(solList);
     panel.add(l);
