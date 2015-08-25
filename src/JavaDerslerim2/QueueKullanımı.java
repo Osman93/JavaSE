@@ -25,7 +25,7 @@ public class QueueKullanımı {
          printQueue(q);
     }
     private static void printQueue(PriorityQueue<String> a){
-    if(a.isEmpty())
+    if(a.isEmpty())//isEmpty() metodu queue boş ise true dolu ise false döndürür.
             System.out.println("Queue'niz boş");
     else
         System.out.printf("TOP %s \n", a);
